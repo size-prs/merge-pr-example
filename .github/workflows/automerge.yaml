@@ -28,3 +28,6 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "kind/docs"
+          MERGE_METHOD: "rebase"
+          MERGE_RETRIES: "6"
+          MERGE_RETRY_SLEEP: "10000"
