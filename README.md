@@ -6,10 +6,18 @@ This is a working example of how you could use [Size PRs](https://github.com/app
 
 You want to automatically merge pull requests that are classified as documentation.
 
+### Warning
+
+This auto-merge behaviour requires a high level of trust of people, processes and tools you have in place.
+
+If configured incorrectly, this could result in code being released that is broken.
+
 ## Setup
 
 1. Install the Size PRs application.
 1. Create CI workflow.
+
+    Typically, you will use tools for linting, compiling and testing your code.
 
     A fake example is in [.github/workflows/ci.yaml](.github/workflows/ci.yaml)
 
